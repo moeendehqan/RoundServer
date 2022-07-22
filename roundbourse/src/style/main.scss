@@ -1,0 +1,335 @@
+
+@font-face {font-family: 'Black';src: url('../../public/woff/PeydaWeb-Black.woff');}
+@font-face {font-family: 'ExtraBold';src: url('../../public/woff/PeydaWeb-ExtraBold.woff');}
+@font-face {font-family: 'Bold';src: url('../../public/woff/PeydaWeb-Bold.woff');}
+@font-face {font-family: 'SemiBold';src: url('../../public/woff/PeydaWeb-SemiBold.woff');}
+@font-face {font-family: 'Medium';src: url('../../public/woff/PeydaWeb-Medium.woff');}
+@font-face {font-family: 'Regular';src: url('../../public/woff/PeydaWeb-Regular.woff');}
+@font-face {font-family: 'extralight';src: url('../../public/woff/peydaWeb-extralight.woff');}
+@font-face {font-family: 'light';src: url('../../public/woff/peydaWeb-light.woff');}
+@font-face {font-family: 'Thin';src: url('../../public/woff/PeydaWeb-Thin.woff');}
+$colorDark1:#1E222B;
+$colorDark2: rgba(30, 34, 43,0.05);
+$colorGray1: #707070;
+$colorGray2: #c1c1c1;
+$coloText1:#F8C646;
+$colorRed1:#db6a6a;
+$colorInfo:rgb(106, 164, 219);
+
+@mixin NoemalButton {
+    background-color: $colorDark1;
+    border: 0px;
+    color: #fff;
+    font-family: 'Regular';
+    width: 180px;
+    height: 25px;
+    margin: 7px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@mixin normalInput {
+    height: 25px;
+    border-radius: 5px;
+    border:1px solid $colorGray1;
+    margin: 7px 0px;
+    width: 180px;
+    text-align: right;
+    font-family: 'Regular';
+}
+
+html ,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.Header{
+    width: 100%;
+    background-color:$colorDark1 ;
+    .HeaderContiner{
+        padding: 7px 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    .SingUpButtom{
+        height: 30px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin: 4px;
+        cursor: pointer;
+        span{
+            color: #fff;
+            text-align: center;
+            font-family: 'Regular';
+            font-size: 0.9rem;
+            margin: 4px;
+        }
+    }
+    .SercheHeader{
+        margin: 0px 25px;
+        input{
+            border: 0px;
+            border-radius: 7px;
+            height: 30px;
+            width: 240px;
+            font-family: 'Regular';
+            text-align: center;
+            background-image: url('../../public/img/serche.png');
+            background-size: 27px;
+            background-repeat: no-repeat;
+            background-position: 97% 50%;
+        }
+    }
+    .TopMenu{
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        button{
+            background-color: transparent;
+            border: 0px;
+            color: #fff;
+            font-family: 'Medium';
+            font-size: 1rem;
+            margin: 0px 5px;
+            &:hover{
+                color: $coloText1;
+                border-bottom: 1px solid $coloText1;
+            }
+        }
+
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 30px;
+        }
+        h5{
+            font-family: 'Black';
+            font-size: 1.1rem;
+            color: #fff;
+            margin: 0px 7px 0px 40px;
+        }
+    }
+}
+
+.ErrorAlarm{
+    font-family: 'Regular';
+    font-size: 0.9rem;
+    margin: 20px 0px;
+    padding: 7px 15px;
+    background-color: #fff;
+    border: 1px solid $colorRed1;
+    border-right: 8px solid $colorRed1;
+    border-radius: 4px;
+}
+
+.InfoAlarm{
+    font-family: 'Regular';
+    font-size: 0.9rem;
+    margin: 20px 0px;
+    padding: 7px 15px;
+    background-color: #fff;
+    border: 1px solid $colorInfo;
+    border-right: 8px solid $colorInfo;
+    border-radius: 4px;
+}
+
+.Register{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    .Description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-grow: 1;
+        h6{
+            font-family: 'Black';
+            color: $colorDark1;
+            font-size: 25px;
+
+            margin-right: 10%;
+            margin-bottom: 20px;
+        }
+        .DescriptionContiner{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            margin-right: 10%;
+            margin-bottom: 10px;
+            margin-top: 23px;
+            align-items: baseline;
+            div{
+                height: 15px;
+                width: 15px;
+                border:1px solid $colorDark1;
+                border-radius: 4px;
+                margin-left: 6px;
+            }
+            span{
+                font-family: 'SemiBold';
+                font-size: 18px;
+            }
+        }
+    }
+    .Form{
+        background-color: $colorDark2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        flex-grow: 1;
+        img{
+            margin-top: 100px;
+            width: 80px;
+        }
+        h6{
+            font-family: 'Bold';
+            font-size: 26px;
+            color: $colorDark1;
+        }
+        input{
+            @include normalInput
+        }
+        button{
+            @include NoemalButton;
+        }
+        span{
+            font-family: 'Regular';
+            color: $colorDark1;
+            cursor: pointer;
+        }
+    }
+}
+
+.VerificationCode{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    margin: 50px auto;
+    img{
+        width: 80px;
+        margin-top: 100px;
+    }
+    h6{
+        font-family: 'Medium';
+        text-align: right;
+        font-size: 1.3rem;
+        margin: 10px 0px;
+    }
+    input{
+        height: 25px;
+        border-radius: 7px;
+        border: 1px solid $colorGray2;
+    }
+    p{
+        font-family: 'Regular';
+        text-align: right;
+    }
+    button{
+        @include NoemalButton;
+    }
+}
+
+.Confirmed{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    width: 250px;
+    img{
+        width: 60px;
+    }
+    h3{
+        font-family: 'Medium';
+        text-align: right;
+        margin: 5px,0px;
+    }
+    p{
+        font-family: 'Regular';
+        text-align: right;
+    }
+    button{
+        @include NoemalButton()
+    }
+
+}
+
+.Login{
+    width: 280px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 80px;
+        margin-top: 100px;
+    }
+    h3{
+        font-family: 'Bold';
+        font-size: 26px;
+        color: $colorDark1;
+    }
+    input{
+        @include normalInput
+    }
+    button{
+        @include NoemalButton()
+    }
+    p{
+        font-family: 'Regular';
+        color: $colorDark1;
+        cursor: pointer;
+    }
+}
+
+.Forget{
+    width: 280px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 80px;
+        margin-top: 100px;
+    }
+    h3{
+        font-family: 'Bold';
+        font-size: 26px;
+        color: $colorDark1;
+    }
+    input{
+        @include normalInput
+    }
+    button{
+        @include NoemalButton()
+    }
+}
+.ChangePasswordContiner{
+    width: 280px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+        @include normalInput
+    }
+    button{
+        @include NoemalButton()
+    }
+    
+}

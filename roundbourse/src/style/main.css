@@ -1,0 +1,398 @@
+@font-face {
+  font-family: "Black";
+  src: url("../../public/woff/PeydaWeb-Black.woff");
+}
+@font-face {
+  font-family: "ExtraBold";
+  src: url("../../public/woff/PeydaWeb-ExtraBold.woff");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("../../public/woff/PeydaWeb-Bold.woff");
+}
+@font-face {
+  font-family: "SemiBold";
+  src: url("../../public/woff/PeydaWeb-SemiBold.woff");
+}
+@font-face {
+  font-family: "Medium";
+  src: url("../../public/woff/PeydaWeb-Medium.woff");
+}
+@font-face {
+  font-family: "Regular";
+  src: url("../../public/woff/PeydaWeb-Regular.woff");
+}
+@font-face {
+  font-family: "extralight";
+  src: url("../../public/woff/peydaWeb-extralight.woff");
+}
+@font-face {
+  font-family: "light";
+  src: url("../../public/woff/peydaWeb-light.woff");
+}
+@font-face {
+  font-family: "Thin";
+  src: url("../../public/woff/PeydaWeb-Thin.woff");
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+}
+
+.Header {
+  width: 100%;
+  background-color: #1E222B;
+}
+.Header .HeaderContiner {
+  padding: 7px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.Header .SingUpButtom {
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 4px;
+  cursor: pointer;
+}
+.Header .SingUpButtom span {
+  color: #fff;
+  text-align: center;
+  font-family: "Regular";
+  font-size: 0.9rem;
+  margin: 4px;
+}
+.Header .SercheHeader {
+  margin: 0px 25px;
+}
+.Header .SercheHeader input {
+  border: 0px;
+  border-radius: 7px;
+  height: 30px;
+  width: 240px;
+  font-family: "Regular";
+  text-align: center;
+  background-image: url("../../public/img/serche.png");
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+}
+.Header .TopMenu {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.Header .TopMenu button {
+  background-color: transparent;
+  border: 0px;
+  color: #fff;
+  font-family: "Medium";
+  font-size: 1rem;
+  margin: 0px 5px;
+}
+.Header .TopMenu button:hover {
+  color: #F8C646;
+  border-bottom: 1px solid #F8C646;
+}
+.Header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Header .logo img {
+  height: 30px;
+}
+.Header .logo h5 {
+  font-family: "Black";
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0px 7px 0px 40px;
+}
+
+.ErrorAlarm {
+  font-family: "Regular";
+  font-size: 0.9rem;
+  margin: 20px 0px;
+  padding: 7px 15px;
+  background-color: #fff;
+  border: 1px solid #db6a6a;
+  border-right: 8px solid #db6a6a;
+  border-radius: 4px;
+}
+
+.InfoAlarm {
+  font-family: "Regular";
+  font-size: 0.9rem;
+  margin: 20px 0px;
+  padding: 7px 15px;
+  background-color: #fff;
+  border: 1px solid rgb(106, 164, 219);
+  border-right: 8px solid rgb(106, 164, 219);
+  border-radius: 4px;
+}
+
+.Register {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.Register .Description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+.Register .Description h6 {
+  font-family: "Black";
+  color: #1E222B;
+  font-size: 25px;
+  margin-right: 10%;
+  margin-bottom: 20px;
+}
+.Register .Description .DescriptionContiner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  margin-top: 23px;
+  align-items: baseline;
+}
+.Register .Description .DescriptionContiner div {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #1E222B;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+.Register .Description .DescriptionContiner span {
+  font-family: "SemiBold";
+  font-size: 18px;
+}
+.Register .Form {
+  background-color: rgba(30, 34, 43, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
+}
+.Register .Form img {
+  margin-top: 100px;
+  width: 80px;
+}
+.Register .Form h6 {
+  font-family: "Bold";
+  font-size: 26px;
+  color: #1E222B;
+}
+.Register .Form input {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #707070;
+  margin: 7px 0px;
+  width: 180px;
+  text-align: right;
+  font-family: "Regular";
+}
+.Register .Form button {
+  background-color: #1E222B;
+  border: 0px;
+  color: #fff;
+  font-family: "Regular";
+  width: 180px;
+  height: 25px;
+  margin: 7px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Register .Form span {
+  font-family: "Regular";
+  color: #1E222B;
+  cursor: pointer;
+}
+
+.VerificationCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  margin: 50px auto;
+}
+.VerificationCode img {
+  width: 80px;
+  margin-top: 100px;
+}
+.VerificationCode h6 {
+  font-family: "Medium";
+  text-align: right;
+  font-size: 1.3rem;
+  margin: 10px 0px;
+}
+.VerificationCode input {
+  height: 25px;
+  border-radius: 7px;
+  border: 1px solid #c1c1c1;
+}
+.VerificationCode p {
+  font-family: "Regular";
+  text-align: right;
+}
+.VerificationCode button {
+  background-color: #1E222B;
+  border: 0px;
+  color: #fff;
+  font-family: "Regular";
+  width: 180px;
+  height: 25px;
+  margin: 7px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Confirmed {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  width: 250px;
+}
+.Confirmed img {
+  width: 60px;
+}
+.Confirmed h3 {
+  font-family: "Medium";
+  text-align: right;
+  margin: 5px, 0px;
+}
+.Confirmed p {
+  font-family: "Regular";
+  text-align: right;
+}
+.Confirmed button {
+  background-color: #1E222B;
+  border: 0px;
+  color: #fff;
+  font-family: "Regular";
+  width: 180px;
+  height: 25px;
+  margin: 7px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Login {
+  width: 280px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Login img {
+  width: 80px;
+  margin-top: 100px;
+}
+.Login h3 {
+  font-family: "Bold";
+  font-size: 26px;
+  color: #1E222B;
+}
+.Login input {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #707070;
+  margin: 7px 0px;
+  width: 180px;
+  text-align: right;
+  font-family: "Regular";
+}
+.Login button {
+  background-color: #1E222B;
+  border: 0px;
+  color: #fff;
+  font-family: "Regular";
+  width: 180px;
+  height: 25px;
+  margin: 7px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Login p {
+  font-family: "Regular";
+  color: #1E222B;
+  cursor: pointer;
+}
+
+.Forget {
+  width: 280px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Forget img {
+  width: 80px;
+  margin-top: 100px;
+}
+.Forget h3 {
+  font-family: "Bold";
+  font-size: 26px;
+  color: #1E222B;
+}
+.Forget input {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #707070;
+  margin: 7px 0px;
+  width: 180px;
+  text-align: right;
+  font-family: "Regular";
+}
+.Forget button {
+  background-color: #1E222B;
+  border: 0px;
+  color: #fff;
+  font-family: "Regular";
+  width: 180px;
+  height: 25px;
+  margin: 7px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ChangePasswordContiner {
+  width: 280px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ChangePasswordContiner input {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #707070;
+  margin: 7px 0px;
+  width: 180px;
+  text-align: right;
+  font-family: "Regular";
+}
+.ChangePasswordContiner button {
+  background-color: #1E222B;
+  border: 0px;
+  color: #fff;
+  font-family: "Regular";
+  width: 180px;
+  height: 25px;
+  margin: 7px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
