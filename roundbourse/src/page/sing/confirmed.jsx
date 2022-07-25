@@ -41,13 +41,17 @@ const Confirmed = ()=>{
                 method:'POST',
                 url:RunningOn+'/sing/verificationcode',
                 data:{code:codeLink}
-            }).then(Response=>{setReturnConfirm(confirmed(Response.data.replay, Response.data.data.fullname, Response.data.data.email, Response.data.data.password))})
+            }).then(Response=>{
+                setReturnConfirm(confirmed(Response.data.replay, Response.data.data.fullname, Response.data.data.email, Response.data.data.password))
+            })
         }else if(location.state!=null){
             axios({
                 method:'POST',
                 url:RunningOn+'/sing/verificationcode',
                 data:{code:location.state.code}
-            }).then(Response=>{setReturnConfirm(confirmed(Response.data.replay, Response.data.data.fullname, Response.data.data.email, Response.data.data.password))})
+            }).then(
+                Response=>{setReturnConfirm(confirmed(Response.data.replay, Response.data.data.fullname, Response.data.data.email, Response.data.data.password))
+            })
         }else{
             navigate('../register')
         }

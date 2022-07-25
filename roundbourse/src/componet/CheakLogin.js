@@ -17,17 +17,17 @@ export const CheakLogin = async () =>{
             if(Response.data.replay){
                 retrnLoin = {replay:true, name:name}
             }else{
-                setCookie('name','', 0)
-                setCookie('email','', 0)
-                setCookie('pass','', 0)
+                setCookie('name','', -1)
+                setCookie('email','', -1)
+                setCookie('pass','', -1)
                 retrnLoin = {replay:false, name:name}
             }
         })
 
     }else{
-        setCookie('name','', 0)
-        setCookie('email','', 0)
-        setCookie('pass','', 0)
+        setCookie('name','', -1)
+        setCookie('email','', -1)
+        setCookie('pass','', -1)
         retrnLoin = {replay:false, name:name}
     }
     return retrnLoin

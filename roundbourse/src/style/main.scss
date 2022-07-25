@@ -12,9 +12,12 @@ $colorDark1:#1E222B;
 $colorDark2: rgba(30, 34, 43,0.05);
 $colorGray1: #707070;
 $colorGray2: #c1c1c1;
+$colorGray3: #e4e4e4;
 $coloText1:#F8C646;
 $colorRed1:#db6a6a;
+$colorGreen1:#8edb6a;
 $colorInfo:rgb(106, 164, 219);
+$colorHover1: #5225CC;
 
 @mixin NoemalButton {
     background-color: $colorDark1;
@@ -44,6 +47,13 @@ html ,body{
     height: 100vh;
     background-size: cover;
 
+}
+#root ,.App{
+    height: 100vh;
+  }
+.App{
+    display: flex;
+    flex-direction: column;
 }
 
 .Header{
@@ -89,6 +99,7 @@ html ,body{
     .TopMenu{
         margin-left: auto;
         display: flex;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: flex-end;
         button{
@@ -325,6 +336,13 @@ html ,body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    img{
+        width: 80px;
+        margin-top: 100px;
+    }
+    h3{
+        font-family: 'Medium';
+    }
     input{
         @include normalInput
     }
@@ -332,4 +350,102 @@ html ,body{
         @include NoemalButton()
     }
     
+}
+
+
+.MarketBand{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: flex-end;
+    padding: 7px;
+    align-items: center;
+    box-shadow: 0px 3px 6px #00000015;
+
+    img{
+        height: 35px;
+        width: 35px;
+    }
+    p{
+        font-family: 'Regular';
+        font-size: 1rem;
+        color: $colorDark1;
+        margin: 0px 20px;
+    }
+    div{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0px 20px;
+
+        p{
+            font-family: 'Regular';
+            font-size: 1rem;
+            color: $colorDark1;
+           margin: 0px 7px;
+
+        }
+        .PrcPos{
+            color: $colorGreen1;
+            font-size: 0.7rem;
+            font-family: 'light';
+            margin-left: -1px;
+        }
+        .PrcNeg{
+            color: $colorRed1;
+            font-size: 0.7rem;
+            font-family: 'light';
+            margin-left: -1px;
+
+        }
+    }
+}
+
+
+
+.Market{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .MarketDesk{
+        flex: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .MarketSideMenu{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        border: 1px solid $colorGray3;
+        padding: 25px 0px;
+
+        button{
+            flex: 1;
+            background-color: transparent;
+            border: 0px;
+            font-family: 'Medium';
+            text-align: right;
+            font-size: 0.9rem;
+            color: $colorDark1;
+            margin: 6px 0px;
+            margin-right: 3px;
+            transition: 0.3s;
+
+            &:hover{
+                color: $colorHover1;
+                border-right: 3px solid $colorHover1;
+                margin-right: 0px;
+            }
+        }
+    
+    }
+}
+
+.ToolBox{
+    height: 90px;
+    background-color: $colorDark1;
+    .Title{
+        
+    }
 }

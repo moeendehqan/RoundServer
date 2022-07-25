@@ -1,7 +1,7 @@
 from flask import Flask, request
-import json
+import api
 from flask_cors import CORS
-import pymongo
+import timeir
 import pandas as pd
 
 import sing
@@ -9,7 +9,7 @@ import sing
 app = Flask(__name__)
 CORS(app)
 
-
+'''-----------------------------------Sing---------------------------------------------'''
 @app.route('/sing/register',methods = ['POST', 'GET'])
 def singRegister():
     data = request.get_json()
@@ -40,6 +40,14 @@ def changepassword():
 def apllychangepassword():
     data = request.get_json()
     return sing.apllychangepassword(data['code'],data['password'])
+'''-----------------------------------Date---------------------------------------------'''
+@app.route('/date/today',methods = ['POST', 'GET'])
+def dateToday():
+    return timeir.TodayString()
+'''-----------------------------------Api---------------------------------------------'''
+@app.route('/api/bfindex',methods = ['POST', 'GET'])
+def bfindex():
+    return api.bfindex()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)

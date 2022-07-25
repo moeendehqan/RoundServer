@@ -1,5 +1,4 @@
 import json
-from turtle import pen
 from pymongo import MongoClient
 import pandas as pd
 import random

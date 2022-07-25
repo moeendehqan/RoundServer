@@ -14,7 +14,6 @@ const ChangePassword = () =>{
     const [typemsg, settypemsg] = useState(null);
     const [password, setPassword] = useState('');
 
-    console.log(password)
     const handleAllow = ()=>{
         CheakLogin().then(r=>{
             if (r.replay){
@@ -70,6 +69,8 @@ const ChangePassword = () =>{
     useEffect(handleChangePassword,[])
     return(
         <div className="ChangePasswordContiner">
+            <img src="img/forget.png" alt="forget"></img>
+            <h3>رمز عبور جدید</h3>
             <input type='password' placeholder="رمزعبور" value={password} onChange={(e)=>setPassword(e.target.value)}></input>
             <button onClick={applyChangePassword}>تایید</button>
             <Alarm msg={msg} SetStaite={setMsg} type={typemsg}/>

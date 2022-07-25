@@ -41,6 +41,15 @@ html, body {
   background-size: cover;
 }
 
+#root, .App {
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
 .Header {
   width: 100%;
   background-color: #1E222B;
@@ -85,6 +94,7 @@ html, body {
 .Header .TopMenu {
   margin-left: auto;
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -376,6 +386,13 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
+.ChangePasswordContiner img {
+  width: 80px;
+  margin-top: 100px;
+}
+.ChangePasswordContiner h3 {
+  font-family: "Medium";
+}
 .ChangePasswordContiner input {
   height: 25px;
   border-radius: 5px;
@@ -395,4 +412,87 @@ html, body {
   margin: 7px auto;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.MarketBand {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-items: flex-end;
+  padding: 7px;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.0823529412);
+}
+.MarketBand img {
+  height: 35px;
+  width: 35px;
+}
+.MarketBand p {
+  font-family: "Regular";
+  font-size: 1rem;
+  color: #1E222B;
+  margin: 0px 20px;
+}
+.MarketBand div {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 20px;
+}
+.MarketBand div p {
+  font-family: "Regular";
+  font-size: 1rem;
+  color: #1E222B;
+  margin: 0px 7px;
+}
+.MarketBand div .PrcPos {
+  color: #8edb6a;
+  font-size: 0.7rem;
+  font-family: "light";
+  margin-left: -1px;
+}
+.MarketBand div .PrcNeg {
+  color: #db6a6a;
+  font-size: 0.7rem;
+  font-family: "light";
+  margin-left: -1px;
+}
+
+.Market {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.Market .MarketDesk {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.Market .MarketSideMenu {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid #e4e4e4;
+  padding: 25px 0px;
+}
+.Market .MarketSideMenu button {
+  flex: 1;
+  background-color: transparent;
+  border: 0px;
+  font-family: "Medium";
+  text-align: right;
+  font-size: 0.9rem;
+  color: #1E222B;
+  margin: 6px 0px;
+  margin-right: 3px;
+  transition: 0.3s;
+}
+.Market .MarketSideMenu button:hover {
+  color: #5225CC;
+  border-right: 3px solid #5225CC;
+  margin-right: 0px;
+}
+
+.ToolBox {
+  height: 90px;
+  background-color: #1E222B;
 }/*# sourceMappingURL=main.css.map */
